@@ -1,0 +1,19 @@
+{
+  "name": "netlogix/cli-increasedatabasetimeout",
+  "description": "Flow package that adds an aspect for the CommandController that allows to configure the database timeout for each command individually.",
+  "type": "neos-package",
+  "license": "MIT",
+  "require": {
+    "neos/flow": "^5.3 || ^7.3 || ^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Netlogix\\Cli\\IncreaseDatabaseTimeout\\": "Classes/"
+    }
+  },
+  "extra": {
+    "neos": {
+      "package-key": "Netlogix.Cli.IncreaseDatabaseTimeout"
+    }
+  }
+}
