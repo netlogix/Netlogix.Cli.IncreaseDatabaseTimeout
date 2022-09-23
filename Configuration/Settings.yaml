@@ -1,0 +1,5 @@
+Netlogix:
+  Cli:
+    IncreaseDatabaseTimeout:
+      timeouts:
+        'resource:publish': 3600
