@@ -37,9 +37,9 @@ class CommandControllerAspect
 			->getCommand()
 			->getCommandIdentifier();
 
-		$matchCount = preg_match('/[^:]*:(?<commandName>.*)/', $commandIdentifier, $matches);
+        $result = preg_match('/[^:]*:(?<commandName>.*)/', $commandIdentifier, $matches);
 
-		if ($matchCount === 0 || !array_key_exists($matches['commandName'], $this->timeouts)) {
+		if (!$result || !array_key_exists($matches['commandName'], $this->timeouts)) {
 			return;
 		}
 
